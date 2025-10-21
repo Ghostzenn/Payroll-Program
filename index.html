@@ -1,4 +1,4 @@
-# <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,7 +31,7 @@
     <label>WORK DAYS:</label>
     <input type="number" id="daysWorked" placeholder="Enter Work Days">
 
-    <button onclick="computePayroll()">SUBMIT</button>
+    <button onclick="computePayroll()">Submit</button>
   </div>
 
   <script>
@@ -46,8 +46,7 @@
 
       if (!empID || !lastName || !firstName || !middleName || !position || isNaN(rate) || isNaN(days)) {
         alert("Please fill out all fields correctly!");
-        return;
-      }
+        return;}
 
       const gross = rate * days;
       const sss = gross * 0.05;
