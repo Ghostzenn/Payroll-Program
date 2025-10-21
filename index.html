@@ -46,7 +46,8 @@
 
       if (!empID || !lastName || !firstName || !middleName || !position || isNaN(rate) || isNaN(days)) {
         alert("Please fill out all fields correctly!");
-        return;}
+        return;
+      }
 
       const gross = rate * days;
       const sss = gross * 0.05;
