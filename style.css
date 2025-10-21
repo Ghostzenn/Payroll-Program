@@ -1,4 +1,4 @@
-.body {
+body {
   background: url('btd.jpg') no-repeat center center/cover;
   font-family: Arial, sans-serif;
   display: flex; 
@@ -20,19 +20,19 @@
   border: 2px solid black;
 }
 
-.h1 {
+h1 {
   margin-bottom: 15px;
   text-shadow: 1px 1px 2px black;
 }
 
-.label {
+label {
   display: block;
   text-align: left;
   margin-top: 8px;
   font-weight: bold;
 }
 
-.input {
+input {
   width: 100%;
   padding: 8px;
   margin-top: 3px;
@@ -42,7 +42,7 @@
   font-size: 15px;
 }
 
-.button {
+button {
   background: linear-gradient(to right, red, blue);
   color: white;
   padding: 10px 20px;
@@ -53,7 +53,7 @@
   font-weight: bold;
 }
 
-.button:hover {
+button:hover {
   opacity: 0.9;
 }
 
