@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Display Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container display">
+    <h1>PAYROLL SUMMARY</h1>
+
+    <p><strong>ID NUMBER:</strong> <span id="empID"></span></p>
+    <p><strong>LAST NAME:</strong> <span id="lastName"></span></p>
+    <p><strong>FIRST NAME:</strong> <span id="firstName"></span></p>
+    <p><strong>MIDDLE NAME:</strong> <span id="middleName"></span></p>
+    <p><strong>POSITION:</strong> <span id="position"></span></p>
+    <p><strong>RATE:</strong> ₱<span id="rate"></span></p>
+    <p><strong>DAYS WORKED:</strong> <span id="days"></span></p>
+    <p><strong>GROSS PAY:</strong> ₱<span id="gross"></span></p>
+
+    <h2>DEDUCTIONS</h2>
+    <p>SSS (5%): ₱<span id="sss"></span></p>
+    <p>Pag-ibig (3%): ₱<span id="pagibig"></span></p>
+    <p>Philhealth (2%): ₱<span id="philhealth"></span></p>
+    <p>Tax (5%): ₱<span id="tax"></span></p>
+    <p><strong>TOTAL DEDUCTION:</strong> ₱<span id="totalDeduction"></span></p>
+
+    <h2 class="net-label">NET PAY:</h2>
+    <p class="net-value">₱<span id="net"></span></p>
+
+    <button onclick="goBack()">BACK</button>
+  </div>
+
+  <script>
+    document.getElementById('empID').textContent = localStorage.getItem('empID');
+    document.getElementById('lastName').textContent = localStorage.getItem('lastName');
+    document.getElementById('firstName').textContent = localStorage.getItem('firstName');
+    document.getElementById('middleName').textContent = localStorage.getItem('middleName');
+    document.getElementById('position').textContent = localStorage.getItem('position');
+    document.getElementById('rate').textContent = localStorage.getItem('rate');
+    document.getElementById('days').textContent = localStorage.getItem('days');
+    document.getElementById('gross').textContent = localStorage.getItem('gross');
+    document.getElementById('sss').textContent = localStorage.getItem('sss');
+    document.getElementById('pagibig').textContent = localStorage.getItem('pagibig');
+    document.getElementById('philhealth').textContent = localStorage.getItem('philhealth');
+    document.getElementById('tax').textContent = localStorage.getItem('tax');
+    document.getElementById('totalDeduction').textContent = localStorage.getItem('totalDeduction');
+    document.getElementById('net').textContent = localStorage.getItem('net');
+
+    function goBack() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
